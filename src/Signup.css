@@ -1,0 +1,38 @@
+.App-Signup{
+    justify-content:center;
+    padding-top: 10rem;
+    padding-left: 20rem;
+    display: flex;
+    flex-direction: column;
+ 
+
+}
+.template{
+    background-image: url("images/signup.jpg");
+    background-size: 1000px 40%;
+    background-repeat: no-repeat;
+    justify-content:center;
+    height: 1500px;
+    width : 80%;
+    margin:3rem 15rem 3rem 15rem;
+    
+
+}
+
+.Signup-form{
+    margin:3rem 15rem 3rem 30rem;
+    padding-bottom:2rem;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    justify-content: end;
+    color:red;
+    line-height: 2em;
+
+}
+.submit{
+    border-radius: 12px;
+    width:50%;
+    justify-content: left;
+}
