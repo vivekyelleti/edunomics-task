@@ -48,6 +48,21 @@ function About(){
         </div>
     )
 }
+function Sessions_opt(){
+    return(
+        <div className="choose">
+             <select name="choose class" className="btn">
+             <option value="Choose Class">Choose Class</option>
+    <option value="1">D1</option>
+    <option value="2">D2</option>
+    <option value="3">D3</option>
+  </select>
+    
+        </div>
+    )
+
+
+}
 
 class MyAccount extends React.Component{
     constructor(props){
@@ -108,13 +123,14 @@ class MyAccount extends React.Component{
         const downloads = this.state.isDownloads;
         const settings = this.state.isSettings;
         const about = this.state.isAbout;
-
         let displayContent;
+        let settingsOptions;
         if (about) {
           displayContent=<About />;
         } 
         else if(sessions){
             displayContent=<Sessions/>;
+            
         }
         else if(downloads){
             displayContent=<Downloads />;
@@ -130,12 +146,26 @@ class MyAccount extends React.Component{
         {
             displayContent=<Inhome />;
         }
+        if(sessions){
+            settingsOptions=<Sessions/>;
+        }
         
         return(
             <div className="my-account">
                 <div className="top-header">
                     <h2 >Welcome to Edunomics</h2>
-                    <input type="button" className="btn" value="MyAccount" ></input>
+
+                    {settingsOptions}
+             
+
+                    <select name="myaccount" className="btn">
+                        <option value="My Account">My Accountt</option>
+                        <option value="1">D1</option>
+                        <option value="2">D2</option>
+                        <option value="3">D3</option>
+                    </select>
+
+                   
                 </div>
                 <div className="middle-content">
 
